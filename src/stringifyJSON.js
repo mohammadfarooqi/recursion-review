@@ -9,8 +9,10 @@ var parseArray = function (arr) {
   if(arr.length === 0) {
     return '[]';
   }
+
   //init str with open square bracket
   var str = '[';
+
   //loop through each element and parse
   for(var i = 0; i < arr.length; i++) {
     if(typeof arr[i] === 'number') {
@@ -28,9 +30,9 @@ var parseArray = function (arr) {
     }
   }
 
- str += ']';
- return str;
-}
+  str += ']';
+  return str;
+};
 
 //returns length of obj
 var objLength = function (obj) {
@@ -43,7 +45,7 @@ var objLength = function (obj) {
   }
 
   return count;
-}
+};
 
 //takes in an object parses and returns a string
 var parseObj = function (obj) {
@@ -75,9 +77,9 @@ var parseObj = function (obj) {
     objSize--;
   }
 
- str += '}';
- return str;
-}
+  str += '}';
+  return str;
+};
 
 //takes an object ans stringifies to a JSON object
 var stringifyJSON = function(obj) {
